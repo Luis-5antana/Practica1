@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica HTML5</title>
+  <style>
+    p{
+      text-align: justify;
+    }
+  </STyle>
+</head>
+
+<body>
+  
+  <header id="encabezado">Aplicación Web
+    <p>Desarrollada por Luis Santana</p>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="quiensoy.html" target="_blank">¿Quién soy?</li></a>
+      <li><a href="hobbies.html" target="_blank">Hobbies</li></a>
+      <li><a href="redes_sociales.html" target="_blank">Redes sociales</li></a>
+      <li><a href="multimedia.html" target="_blank">Multimedia</li></a>
+      <li><a href="contacto.html" target="_blank">Contactos</li></a>
+    </ul>
+  </nav>
+
+  <section id="seccion1">
+    <article>
+
+    <p class="centrar">Luis Santana</p>
+
+    <p id="para1">||CÓMO AGREGAR LISTAS Y VIÑETAS||</p>
+    <p> LISTAS NO ORDENADAS (UL) en HTML</p>
+    <p>Una lista no ordenada en HTML es aquella en la que los elementos no están enumerados ni marcados por algún
+      carácter que designe orden. Los elementos están simplemente listados con alguna viñeta predeterminada como puede ser un
+      punto u otro tipo como veremos más adelante.</p>
+
+    <p id="para2">Etiqueta ul
+      Una etiqueta (ul) contiene a todos los elementos de la lista y dentro de ella irán los atributos que afectan a toda la lista en bloque.</p>
+
+    <p>Etiqueta li
+      Los elementos de la lista propiamente dichos, se especifican en una etiqueta (li), de tal manera que cada elemento
+      es independiente de otro elemento.</p>
+
+    <p>LISTAS ORDENADAS EN HTML (OL)</p>
+    <p>Una lista ordenada en HTML es aquella en la que los elementos estan enumerados o marcado con algún signo
+      alfanumérico que indique el orden de los elementos.</p>
+
+    <p>Etiqueta (ol)
+      Se utiliza la etiqueta html (ol) para crear listas ordenadas, entre la etiqueta de apertura y cierre irán los
+      elementos de la lista dentro de una etiqueta (li) respectivamente.</p>
+
+    <p>Etiqueta (li)
+      En cualquier caso, la etiqueta (li) sirve para indicar los elementos de la lista, independientemente de si son
+      ordenadas o desordenadas.</p>
+
+    <p>Ejemplo:</p>
+
+    <ul>
+      <li>América</li>
+      <ol>
+        <li>América central</li>
+        <li>América sur</li>
+        <li>América norte</li>
+      </ol>
+      <li>África</li>
+      <ol>
+        <li>África Septentrional</li>
+        <li>África Occidental</li>
+        <li>África Central</li>
+        <li>África Oriental</li>
+        <li>África Meridional</li>
+      </ol>
+
+      <li>Antártida</li>
+      <ul>
+        <li>Antártida oriental</li>
+        <li>Antártida occidental</li>
+      </ul>
+      <li>Asia</li>
+      <li>Europa</li>
+      <li>Oceania</li>
+    </ul>
+
+    <p>||CÓMO INSERTAR UNA TABLA||</p>
+    <p>Para crear una tabla sencilla se ha de utilizar en primer lugar la etiqueta |table|, la cual define la tabla. Y
+      dentro de ella se han de situar por cada fila una etiqueta |tr|, mientras que por cada casilla o celda dentro de
+      la
+      fila, se puede utilizar una etiqueta |th| o |td|, dependiendo de que sea una casilla de cabecera o normal.</p>
+    <p>Ejemplo:</p>
+    <table border="1">
+      <caption>Titulo de la tabla</caption>
+      <tr>
+        <th>Col.Cab.1</th>
+        <th>Col.Cab.2</th>
+      </tr>
+      <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+      </tr>
+    </table>
+  </article>
+  </section>
+
+  <section id="seccion2">
+    <article>
+    <p>||CÓMO INSERTAR UNA IMAGEN||</p>
+    <p>Para poner una imagen simple en una página web, utilizamos el elemento <img>. Se trata de un elemento vacío (lo
+      que
+      significa que no contiene texto o etiqueta de cierre) que requiere de por lo menos de un atributo para ser
+      utilizado: src (a veces denominado por su nombre completo, source). El atributo src contiene una ruta que apunta a
+      la imagen que quieres poner en la página, que puede ser una URL relativa o absoluta, de la misma forma que el
+      elemento <a> contiene los valores del atributo href.</p>
+    <p>"img src=&quot;recursos/calle.jpg”": muestra una imagen que está contenida en una carpeta llamada imágenes. Es
+      una
+      dirección relativa.</p>
+    <p>"img src=”http://farm6.static.flickr.com/5178/5428759578_d6fb2288a4.jpg”: Se muestra una imagen ubicada en una
+      dirección de Internet, en este caso del portal Flickr. Es una dirección absoluta, que muestra una imagen que no
+      está
+      en nuestro ordenador ni en nuestro espacio web, sino directamente en Internet.</p>
+    <p><img width="150" height="150" src="" alt=""
+        srcset="https://www.postposmo.com/wp-content/uploads/2020/11/ozzo-grizzly-1.jpg"></p>
+
+    <p>||CÓMO INSERTAR UN VÍNCULO||</p>
+    <p>Un enlace básico se crea incluyendo el texto (o cualquier otro contenido, ve Convertir bloques de contenido en
+      enlaces), que queramos convertir en un enlace usando un elemento ancla <a>, dándole un atributo href (también
+        conocido como «Hypertext Reference», «target» u objetivo) que contendrá la dirección web hacia dónde queremos
+        que
+        apunte el enlace.</p>
+    <p>Para definir enlaces o hipervínculos utilizaremos la etiqueta |a|</p>
+    <p>Existen varios atributos para los enlaces, algunos de ellos son: href, target y rel</p>
+    <p>Ejemplo:</p>
+    Da clic <a href="http://www.utez.edu.mx/">aquí</a> para ir a utez.edu.mx
+
+    <p>-------------------------------------------------------------------------------------------</p>
+    <p>Tabla práctica 23-05-2022</p>
+    <table border="2">
+      <tr>
+        <th class="centrar">Nombre</th>
+        <th class="centrar">Apellido</th>
+        <th class="centrar">Edad</th>
+      <tr>
+        <td>Juan</td>
+        <td>Perez García</td>
+        <td>25 años</td>
+      </tr>
+      <tr>
+        <td>Pedro</td>
+        td
+      </tr>
+    </table>
+
+    <p>Imagen local:</p>
+    <img width="90%" src="C:\Users\EQUIPO\Documents\AUniversidad\3er Cuatrimestre\Aplicaciones web\Practica1\PracticaHTML5\imagenes\hack.jpg" alt="hack">
+
+    <p>Imagen de Internet:</p>
+    <img width="200" height="200"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" alt="imagen de linux">
+
+    <p>Hipervínculos</p>
+    <a href="https://www.google.com"></a>
+    <p>----------------------------------------------------------------------------------------------------</p>
+    <p>ALUMNOS</p>
+    <a href="#reprobados">ir a los alumnos reprobados |</a>
+    <a href="#aprobados">ir a los alumnos aprobados</a>
+    <p>----------------------------------------------------------------------------------------------------</p>
+
+    <div id="reprobados">
+      <p>Alumnos reprobados:</p>
+      <ul>
+        <li>Tlatelpa</li>
+        <li>Alexis</li>
+        <li>Brayan</li>
+        <li>Jared</li>
+        <li>Sayuri</li>
+        <li>Jair</li>
+        <li>Brandon</li>
+        <li>Sevilla</li>
+      </ul>
+    </div>
+
+    <div id="aprobados">
+      <p>Alumnos aprobados:</p>
+      <ol>
+        <li>Kevin</li>
+        <li>Alexis</li>
+        <li>Alan</li>
+        <li>Javier</li>
+        <li>Geovani</li>
+        <li>Daniel</li>
+      </ol>
+    </div>
+
+
+
+    <p>Alumnos con AU</p>
+    <ol type="a">
+      <li>Tlatelpa</li>
+      <li>Adiel</li>
+      <li>Mayra</li>
+      <li>Frida</li>
+      <li>Sevilla</li>
+    </ol>
+  </article>
+  </section>
+
+
+
+  <footer id="piePagina">
+    <p>Derechos de autor: Luis Santana</p>
+    <p>Todos los derechos reservados 2022</p>
+  </footer>
+
+</body>
+
+</html>
